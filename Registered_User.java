@@ -11,7 +11,12 @@ public class Registered_User  extends User{
 	private String Pay_Status;
 	private String Vehicle;
 	private String Phone;
+	private int check = 0;
 	
+	public int getCheck() {
+		return check;
+	}
+
 	public Registered_User(String name, String no_Plate, String date, String pay_Status, String vehicle, String phone) {
 		super();
 		Name = name;
@@ -93,7 +98,7 @@ public class Registered_User  extends User{
 	     System.out.print("Enter user car number");  
 	     String str= sc.nextLine(); 
 	     String str1 = "";
-	     int check = 0;
+	     
 	    
 	     for(int i=0 ;i<names.size();i++)
 	        { 
