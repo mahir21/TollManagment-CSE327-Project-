@@ -1,5 +1,5 @@
 package toll_Plaza;
 
-public class Non_Registerted_User {
+public class Non_Registerted_User extends User{
 
 }
