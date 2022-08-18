@@ -66,7 +66,7 @@ public class Non_Registerted_User extends User{
 	@Override
 	public void checkUser()
 	{   
-		 
+		System.out.println("No User Found Please Enter User Details  "); 
 		 Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
 	     System.out.print("Enter User Name");  
 	     str0= sc.nextLine(); 

@@ -69,12 +69,17 @@ public class Registered_User  extends User{
 	public void setPhone(String phone) {
 		Phone = phone;
 	}
+	
+	public String getString()
+	{
+		return "name = " + Name + " " + "number plate = " +No_Plate + " " + "registration date = " + Date + " " + "payment status = "+ Pay_Status + " vehicle type = " + Vehicle + " phone number = " + Phone ;
+	}
 	 
     
     //Method To check Whether the user is stored or not
 	//In Registered User Method 
 	@Override
-	public void  checkUser()
+	public void checkUser()
 	{
 		Registered_User r1 = new Registered_User("Aditya","0001","12/05/22","Paid","Car","0151111");
 		Registered_User r2 = new Registered_User("Ramesh","0002","11/05/22","Paid","Bike","0150030");
@@ -113,22 +118,48 @@ public class Registered_User  extends User{
 	             // if Check is > 0 print User found orElse Print User NotFound
 	            	
 	        	  check+=1;
+	        	  System.out.println("\n name = " + names.get(i).getName() + " \n number plate = " + names.get(i).getNo_Plate()+ " " + "\n registration date = " + names.get(i).getDate() + " " + "\n payment status = "+ names.get(i).Pay_Status + "\n vehicle type = " + names.get(i).getVehicle() + "\n phone number = " + names.get(i).getPhone());
+	        	  
 	        	  
 	           }
 	            
+	        
+//	            if(check > 0)
+//		        {
+//		        	System.out.println("name = " + names.get(i).getName() + "number plate = " +No_Plate + " " + "registration date = " + Date + " " + "payment status = "+ Pay_Status + " vehicle type = " + Vehicle + " phone number = " + Phone);
+//		        }
+//		        
+//		        else
+//		        {
+//		        	System.out.println("No Registerted User Found");
+//		        }
+	            
+	            
 	       } 
 	     
-	     
-	     // if Check is > 0 print User found orElse Print User NotFound   
-	        if(check > 0)
+	    /* 
+	     for(int i=0 ;i<names.size();i++)
+	     {
+	    	 
+	     if(check > 0)
 	        {
-	        	System.out.println("Registerted User Found");
+	        	System.out.println("name = " + names.get(i).getName() + "number plate = " +No_Plate + " " + "registration date = " + Date + " " + "payment status = "+ Pay_Status + " vehicle type = " + Vehicle + " phone number = " + Phone);
 	        }
 	        
 	        else
 	        {
 	        	System.out.println("No Registerted User Found");
 	        }
+	     }
+	     */
+	     
+	     
+	     // if Check is > 0 print User found orElse Print User NotFound   
+	      
+	        
+	        
+	        	
+	        
 	        
 	      
 		

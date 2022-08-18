@@ -10,7 +10,7 @@ public class User {
 		
 		if(r1.getCheck() == 0)
 		{
-			System.out.println("Enter User Details");
+			
 			Non_Registerted_User n1 = new Non_Registerted_User();
 			n1.checkUser();
 			System.out.println(n1.getString());
